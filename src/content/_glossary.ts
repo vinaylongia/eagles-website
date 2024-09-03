@@ -26,7 +26,7 @@ export const glossaryList: GlossaryTerm[] = [
   },
   {
     term: 'Dummy half',
-    def: 'The arriving attacking player who picks up the ball from the floor after a touch has been made and the ball has been played. The dummy half can't score and can't get caught in possession. After passing the ball dummy half status is relinquished.'
+    def: 'The arriving attacking player who picks up the ball from the floor after a touch has been made and the ball has been played. The dummy half can\'t score and can\'t get caught in possession. After passing the ball dummy half status is relinquished.'
   },
   {
     term: 'Dump',
