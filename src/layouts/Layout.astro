@@ -39,7 +39,6 @@ const { href } = Astro.url;
   </head>
   <!-- <link rel="preconnect" href="https://ik.imagekit.io" /> -->
   <!-- <Fonts /> -->
-
   <body>
     <Header />
     <main>
@@ -48,3 +47,44 @@ const { href } = Astro.url;
     <Footer />
   </body>
 </html>
+
+<style is:global>
+  :root {
+    --color-base: #004456;
+    --color-secondary: #043340;
+    --container-width: 1000px;
+    --container-gutter: 1rem;
+  }
+
+  html {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  @media (min-width: 801px) {
+    html {
+      font-size: 20px;
+    }
+  }
+
+  body {
+    background: linear-gradient(
+        350deg,
+        rgba(4, 51, 64, 1) 0%,
+        rgba(0, 68, 86, 1) 35%,
+        rgba(4, 51, 64, 1) 100%
+      )
+      fixed;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  a {
+    color: #46d4fc;
+  }
+
+  main {
+    max-width: var(--container-width);
+    padding: 0 var(--container-gutter);
+    margin: 0 auto;
+  }
+</style>
