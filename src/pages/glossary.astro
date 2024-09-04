@@ -6,15 +6,24 @@ import { glossaryList } from "../content/_glossary";
 <Layout>
   <section>
     <h1>Glossary of terms</h1>
-    <ul>
+    <dl>
       {
         glossaryList.map(({ term, def }) => (
-          <li>
-            <h5 set:html={term} />
-            <Fragment set:html={def} />
-          </li>
+          <>
+            <dt set:html={term} />
+            <dd set:html={def} />
+          </>
         ))
       }
-    </ul>
+    </dl>
   </section>
 </Layout>
+
+<style>
+  dt {
+    color: rgb(252, 252, 198);
+  }
+  dd {
+    margin: 0.5em 0 2em;
+  }
+</style>

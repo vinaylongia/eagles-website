@@ -12,21 +12,25 @@ export const tips: string[] = [
 ];
 
 interface AdvancedTip {
+  hash: string;
   tip: string;
   def: string;
 }
 
 export const advancedTips: AdvancedTip[] = [
   {
-    tip: "initiating Initiating the touch",
+    hash: "initiating",
+    tip: "Initiating the touch",
     def: "In order to speed up the play of the ball a player can touch defending players to initiate the touch. An experienced player can, on the run, touch a defending player, place the ball and step over it all in one fluid action. If done well this can be invaluable as the defending team will have to work harder to get back onside. You'll also find more experienced players will attempt to run past defenders to touch them from the side in order to steal an extra yard or two.",
   },
   {
-    tip: "driving Driving",
+    hash: "driving",
+    tip: "Driving",
     def: "In more structured games of touch rugby to build momentum and retain possession the attacking team will usually choose to drive the ball. For the first 3 tackles, using a pod of 3 players each acting in turn to take the ball forward, play dummy half and act as a first receiver easy metres can be made. This also tires the defending team while pulling them out of shape creating gaps in the defence. If done properly each successive drive can make more ground than the last. When games of touch are won and lost on possession and set completion driving is key to get the defense moving backwards. The success of a drive is dependent on the speed of the play of the ball and the timing of the dummy half and runners.",
   },
   {
-    tip: "split Splitting",
+    hash: "split",
+    tip: "Splitting",
     def: "A staple touch move where a player who is touched immediately plays the ball and steps to the left or right allowing the dummy half to pick up the ball, step in front, and pass back to him/her. This is often used during a two player drive or as a strike move close to the line as the dummy half can't score.",
   },
 ];

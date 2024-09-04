@@ -10,13 +10,13 @@ import { tips, advancedTips } from "../content/_tips";
       {tips.map((tip) => <li>{tip}</li>)}
     </ul>
   </section>
-  <section>
+  <section class="adv">
     <h2>Advanced tips</h2>
     <ul>
       {
-        advancedTips.map(({ tip, def }) => (
+        advancedTips.map(({ hash, tip, def }) => (
           <li>
-            <h5>{tip}</h5>
+            <h4 id={hash}>{tip}</h4>
             {def}
           </li>
         ))
@@ -24,3 +24,10 @@ import { tips, advancedTips } from "../content/_tips";
     </ul>
   </section>
 </Layout>
+
+<style>
+  .adv ul {
+    list-style: none;
+    padding: 0;
+  }
+</style>
