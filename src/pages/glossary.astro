@@ -1,0 +1,20 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { glossaryList } from "../content/_glossary";
+---
+
+<Layout>
+  <section>
+    <h1>Glossary of terms</h1>
+    <ul>
+      {
+        glossaryList.map(({ term, def }) => (
+          <li>
+            <h5 set:html={term} />
+            <Fragment set:html={def} />
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Layout>

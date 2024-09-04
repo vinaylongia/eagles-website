@@ -29,4 +29,4 @@ export const advancedTips: AdvancedTip[] = [
     tip: "split Splitting",
     def: "A staple touch move where a player who is touched immediately plays the ball and steps to the left or right allowing the dummy half to pick up the ball, step in front, and pass back to him/her. This is often used during a two player drive or as a strike move close to the line as the dummy half can't score.",
   },
-]
+];
