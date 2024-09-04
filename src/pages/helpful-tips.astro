@@ -1,0 +1,26 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { tips, advancedTips } from "../content/_tips";
+---
+
+<Layout>
+  <section>
+    <h2>Helpful touch rugby tips</h2>
+    <ul>
+      {tips.map((tip) => <li>{tip}</li>)}
+    </ul>
+  </section>
+  <section>
+    <h2>Advanced tips</h2>
+    <ul>
+      {
+        advancedTips.map(({ tip, def }) => (
+          <li>
+            <h5>{tip}</h5>
+            {def}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Layout>
