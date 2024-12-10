@@ -1,0 +1,29 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { glossaryList } from "../content/_glossary";
+---
+
+<Layout>
+  <section>
+    <h1>Glossary of terms</h1>
+    <dl>
+      {
+        glossaryList.map(({ term, def }) => (
+          <>
+            <dt set:html={term} />
+            <dd set:html={def} />
+          </>
+        ))
+      }
+    </dl>
+  </section>
+</Layout>
+
+<style>
+  dt {
+    color: rgb(252, 252, 198);
+  }
+  dd {
+    margin: 0.5em 0 2em;
+  }
+</style>
